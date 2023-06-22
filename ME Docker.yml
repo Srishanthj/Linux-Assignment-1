@@ -12,7 +12,7 @@ services:
     environment:
       - DATABASE_URL=postgresql://postgres:Sathyam!18@database:5432/postgres
     deploy:
-      replicas: 3
+      replicas: 2
     logging:
       driver: gelf
       options:
@@ -27,7 +27,7 @@ services:
       - postgres-data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=Sathyam!18
+      - POSTGRES_PASSWORD=Hello!18
       - POSTGRES_DB=postgres
 
   frontend:
